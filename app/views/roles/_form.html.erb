@@ -6,12 +6,12 @@
   <% else %>
     <div>
       <%= f.label :movie_id %><br>
-      <%= f.collection_select :movie_id, Movie.order(:title), :id, :title %>
+      <%= f.number_field :movie_id %>
     </div>
   <% end %>
   <div>
     <%= f.label :actor_id %><br>
-    <%= f.collection_select :actor_id, Actor.order(:name), :id, :actor_name_dob %>
+    <%= f.number_field :actor_id %>
   </div>
 
   <div>

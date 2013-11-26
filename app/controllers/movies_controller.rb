@@ -12,7 +12,6 @@ class MoviesController < ApplicationController
 
   def show
     @movie = Movie.find_by(:id => params[:id])
-    @reviews = @movie.reviews
 
     respond_to do |format|
       format.html do

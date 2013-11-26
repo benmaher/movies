@@ -10,9 +10,11 @@
   <%= @movie.year %>
 </p>
 
-<p>Directed By: <%= @movie.director.name %>, born <%= @movie.director.dob %></p>
+<p>Directed By: , born </p>
 
 <%= link_to "Add a Role", new_role_url(:movie_id => @movie.id) %>
+
+<p>Roles:</p>
 
 <ul>
 <% @movie.roles.each do |role| %>
